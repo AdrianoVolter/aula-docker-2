@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nginx_aula_docker:
+    image: adrianovolter/aula-docker:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./test:/usr/share/nginx/html
